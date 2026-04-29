@@ -1,0 +1,180 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    background-color: #121212 !important;
+    color: white !important;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e50914 !important;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- SECCIONES --- */
+section {
+    border: 2px solid #e50914 !important;
+    background-color: #1f1f1f !important;
+    margin: 40px auto;
+    max-width: 600px; /* Tamaño ideal para que los formularios no se estiren */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Excepción para que el inicio (cartelera) siga siendo ancho */
+#cartelera, #galeria {
+    max-width: 1000px;
+}
+
+h2 {
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* --- FORMULARIOS (Login, Registro, Contacto) --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: -10px; /* Acerca el label al input */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #e50914;
+    outline: none;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b20710;
+    transform: scale(1.02);
+}
+
+/* --- TABLAS (Inicio) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #e50914;
+}
+
+/* --- GALERÍA (Inicio) --- */
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item-cine {
+    width: 250px;
+    border: 1px solid #e50914;
+    background: #252525;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item-cine img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.detalle-pelicula {
+    padding: 10px;
+    text-align: center;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Clase reutilizable para cualquier imagen de película o contenido */
+.img-cine {
+    width: 100%;               /* Se adapta al ancho de su contenedor */
+    max-width: 300px;          /* Evita que se vea gigante en pantallas grandes */
+    height: 450px;             /* Altura estándar de póster */
+    object-fit: cover;         /* Ajusta la imagen sin estirarla */
+    border: 2px solid #e50914; /* El borde rojo de tu marca */
+    border-radius: 8px;        /* Bordes redondeados para que se vea moderno */
+    display: block;            /* Evita espacios extra debajo de la imagen */
+    margin: 10px auto;         /* La centra automáticamente */
+    transition: 0.3s;          /* Suaviza el efecto cuando pasas el mouse */
+}
+
+.img-cine:hover {
+    transform: scale(1.05);    /* Crece un poco al pasar el mouse */
+    box-shadow: 0 0 15px #e50914; /* Brillo rojo al resaltar */
+}
